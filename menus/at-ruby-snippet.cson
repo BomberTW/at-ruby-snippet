@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle at-ruby-snippet'
+      'command': 'at-ruby-snippet:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'at-ruby-snippet'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'at-ruby-snippet:toggle'
+        }
+      ]
+    ]
+  }
+]
